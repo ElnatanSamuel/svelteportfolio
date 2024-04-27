@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+}
+
+.bglinesthing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 700px;
+  width: 100%;
+  box-shadow: #7a7a7a;
+  /* background-color: #fff;
+  opacity: 0.1;
+  background-image: linear-gradient(#fff 1px, transparent 1px),
+    linear-gradient(to right, #fff 1px, #000 1px);
+  background-size: 40px 40px; */
+
+  /* background-color: #fff; */
+  /* opacity: 0.05;
+  background-image: radial-gradient(circle at center center, #ffffff, #d4d4d4),
+    repeating-radial-gradient(
+      circle at center center,
+      #9f9f9f,
+      #7a7a7a,
+      10px,
+      transparent 100px,
+      transparent 150px
+    );
+  background-blend-mode: multiply;  */
+
+  background-color: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 255, 255, 1) 83%
+  );
+  opacity: 0.08;
+  background-image: linear-gradient(#fff 2px, transparent 2px),
+    linear-gradient(90deg, #fff 2px, transparent 2px),
+    linear-gradient(#fff 1px, transparent 2px),
+    linear-gradient(90deg, #fff 1px, #000 2px);
+  background-size: 50px 50px, 500px 50px, 100px 100px, 100px 100px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.glow {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  box-shadow: 0 0 200px 130px #9d2eb0; /* outer cyan */
+}
+
+@keyframes -global-make-visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.projectcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  height: 100%;
+  padding: 3rem;
+  place-items: center;
+  column-gap: 2rem;
+  row-gap: 3rem;
+  margin-top: 20px;
+}
+
+.projectcard {
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  text-align: center;
+  width: 450px;
+}
+
+@media (max-width: 640px) {
+  .projectcard {
+    width: 100%;
+  }
+  .projectcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    padding-bottom: 0;
+    margin-top: 60px;
+    width: 100%;
+  }
+}
