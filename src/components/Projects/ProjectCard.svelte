@@ -10,7 +10,7 @@
     <div class={cn("p-5 rounded-md", project.background)}>
       <DirectionAwareHover
         imageUrl={project.cover}
-        className="w-full  md:h-80  space-y-5 cursor-pointer"
+        className="w-full  md:h-10  space-y-5 cursor-pointer"
       >
         <a href="." class="space-y-5 bg-black/[.3] py-4 px-10 rounded-md">
           <h1 class="text-2xl font-semibold">{project.title}</h1>

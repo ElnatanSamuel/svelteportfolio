@@ -6,6 +6,22 @@
 
   export const Projects = [
     {
+      title: "Monel Ecommerce App",
+      techstack: [
+        "mdi:react",
+        "simple-icons:express",
+        "simple-icons:mongodb",
+        "mdi:tailwind",
+        "fa6-brands:sass",
+      ],
+      techstackword: ["React", "Tailwindcss", "Express", "MongoDB", "Sass"],
+      github: "https://github.com/ElnatanSamuel/Fullecom",
+      livelink: "https://monel.vercel.app/",
+      cover: "/monelproj.png",
+      background: "bg-slightpurple",
+      desc: "Built with React, Express, and Mongoose, this eCommerce app features secure authentication and uses Redux for state management. It offers a seamless shopping experience with dynamic product listings and a user-friendly interface.",
+    },
+    {
       title: "Ale Interior",
       techstack: [
         "mdi:react",
@@ -17,43 +33,16 @@
       livelink: "https://aleinterior.com",
       cover: "/aleinterior.png",
       background: "bg-glowskyblue",
-      desc: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ex perferendis dolor quos laborum illum nam dicta, temporibus eligendi. Ex!",
+      desc: "Built with React and Sanity CMS, this site is designed for an interior design company to showcase their portfolio and services. It features a user-friendly interface and dynamic content management. Currently in production.",
     },
     {
-      title: "ES Ecommerce App",
-      techstack: [
-        "mdi:react",
-        "simple-icons:express",
-        "simple-icons:mongodb",
-        "mdi:tailwind",
-        "fa6-brands:sass",
-      ],
-      techstackword: ["React", "Tailwindcss", "Express", "MongoDB", "Sass"],
-      github: "https://github.com/ElnatanSamuel/Fullecom",
-      livelink: "https://full.ecom.elnatansamueldev.com/",
-      cover: "/ecomproj.png",
-      background: "bg-slightpurple",
-      desc: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ex perferendis dolor quos laborum illum nam dicta, temporibus eligendi. Ex!",
-    },
-    {
-      title: "React",
+      title: "Aora app",
       techstack: ["mdi:react", "mdi:react", "mdi:react", "mdi:react"],
-      techstackword: ["React", "Tailwindcss", "Sanity", "Sass"],
-      github: "https://github.com",
-      livelink: "https://github.com",
-      cover: "/portfolio.png",
+      techstackword: ["React Native", "Tailwindcss", "Appwrite"],
+      github: "https://github.com/ElnatanSamuel/nativeAuraApp",
+      cover: "/auraapp.png",
       background: "bg-glowskyblue",
-      desc: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ex perferendis dolor quos laborum illum nam dicta, temporibus eligendi. Ex!",
-    },
-    {
-      title: "React",
-      techstack: ["mdi:react", "mdi:react", "mdi:react", "mdi:react"],
-      techstackword: ["React", "Tailwindcss", "Sanity", "Sass"],
-      github: "https://github.com",
-      livelink: "https://github.com",
-      cover: "/portfolio.png",
-      background: "bg-slightpurple",
-      desc: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ex perferendis dolor quos laborum illum nam dicta, temporibus eligendi. Ex!",
+      desc: "Developed with React Native, Tailwind, and Appwrite, this app features sign-in functionality and supports uploading images or videos. Appwrite’s APIs ensure smooth backend integration and a responsive user experience.",
     },
   ];
 </script>
@@ -77,7 +66,11 @@
     <div class="projectcontainer">
       {#each Projects as project, idx}
         <div class="projectcard rounded-lg">
-          <img class="w-full h-full object-fit" src={project.cover} alt="" />
+          <img
+            class="w-full h-full max-h-[300px] object-cover"
+            src={project.cover}
+            alt=""
+          />
           <div class="text-center w-full">
             <p class="font-bold text-glowskyblue pt-4 pb-2 text-xl md:text-2xl">
               {project.title}
@@ -98,7 +91,7 @@
             <div class="flex flex-wrap justify-center items-center gap-6 p-2">
               {#each project.techstackword as tech}
                 <!-- <iconify-icon icon={tech} width="30"></iconify-icon> -->
-                <p class="text-white font-bold text-xs md:text-md">
+                <p class="text-white font-bold text-sm md:text-lg">
                   {tech}
                 </p>
               {/each}

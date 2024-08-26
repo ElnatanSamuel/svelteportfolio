@@ -18,9 +18,15 @@
     </h1>
 
     <div class="flex justify-center items-center space-x-4 z-20">
-      <LinkedinSolid size="xl" class="cursor-pointer" />
-      <GithubSolid size="xl" class="cursor-pointer" />
-      <FilePdfOutline size="xl" class="cursor-pointer" />
+      <a href="https://www.linkedin.com/in/elnatansamuel999/" target="_blank"
+        ><LinkedinSolid size="xl" class="cursor-pointer" /></a
+      >
+      <a href="https://github.com/ElnatanSamuel/" target="_blank"
+        ><GithubSolid size="xl" class="cursor-pointer" /></a
+      >
+      <a href="/Elnatan-Samuel2024.pdf" target="_blank">
+        <FilePdfOutline size="xl" class="cursor-pointer" />
+      </a>
     </div>
   </div>
 </div>

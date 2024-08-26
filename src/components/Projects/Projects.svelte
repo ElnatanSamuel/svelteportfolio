@@ -27,7 +27,7 @@
         "fa6-brands:sass",
       ],
       github: "https://github.com/ElnatanSamuel/Fullecom",
-      livelink: "https://full.ecom.elnatansamueldev.com/",
+      livelink: "https://monel.vercel.app//",
       cover: "/ecomproj.png",
       background: "bg-slightpurple",
     },
@@ -70,33 +70,28 @@
       {#each Projects as project, idx}
         <div>
           <div class={cn("p-5 rounded-md ", project.background)}>
-            <DirectionAwareHover
-              imageUrl={project.cover}
-              className="w-full h-[300px] md:block space-y-5 cursor-pointer"
-            >
-              <div class=" space-y-5 py-4 bg-black/[.4] pl-4 pr-20 rounded-md">
-                <h1 class="text-2xl font-semibold">{project.title}</h1>
-                <div class="flex item-center gap-5">
-                  {#each project.techstack as tech}
-                    <iconify-icon icon={tech} width="30"></iconify-icon>
-                  {/each}
-                </div>
-                <div class="flex items-center gap-5">
-                  {#if project.github}
-                    <a href={project.github} target="_blank"
-                      ><Button borderRadius=".5rem" className="p-3"
-                        ><p class=" font-semibold">🔗 GITHUB</p></Button
-                      ></a
-                    >{/if}
-                  {#if project.livelink}
-                    <a href={project.livelink} target="_blank"
-                      ><Button borderRadius=".5rem" className="p-3"
-                        ><p class=" font-semibold">🌐 LIVE</p></Button
-                      ></a
-                    >{/if}
-                </div>
+            <div class=" space-y-5 py-4 bg-black/[.4] pl-4 pr-20 rounded-md">
+              <h1 class="text-2xl font-semibold">{project.title}</h1>
+              <div class="flex item-center gap-5">
+                {#each project.techstack as tech}
+                  <iconify-icon icon={tech} width="30"></iconify-icon>
+                {/each}
               </div>
-            </DirectionAwareHover>
+              <div class="flex items-center gap-5">
+                {#if project.github}
+                  <a href={project.github} target="_blank"
+                    ><Button borderRadius=".5rem" className="p-3"
+                      ><p class=" font-semibold">🔗 GITHUB</p></Button
+                    ></a
+                  >{/if}
+                {#if project.livelink}
+                  <a href={project.livelink} target="_blank"
+                    ><Button borderRadius=".5rem" className="p-3"
+                      ><p class=" font-semibold">🌐 LIVE</p></Button
+                    ></a
+                  >{/if}
+              </div>
+            </div>
           </div>
           <div class="flex items-center justify-center mt-4 gap-5">
             <Button borderRadius=".5rem" className="p-3 block md:hidden"

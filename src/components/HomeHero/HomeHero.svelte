@@ -30,9 +30,9 @@
         class="text-sm md:text-lg text-gray-300 lg:w-[600px] text-center lg:text-left"
         in:fly={{ y: 50, opacity: 0, duration: 500, delay: 100 }}
       >
-        I'm a Full Stack Web Developer and gaming aficionado ready to code your
-        next epic quest. Let's level up your ideas into interactive, web-based
-        adventures!
+        I'm a Full Stack Web Developer specializing on the MERN stack and gaming
+        aficionado ready to code your next epic quest. Let's level up your ideas
+        into interactive, web-based adventures!
       </p>
       <div
         class="mb-20"
@@ -40,7 +40,7 @@
       >
         <a href="mailto:elnatan23samuel@gmail.com"
           ><button
-            class="inline-block z-20 text-xl md:text-3xl cursor-pointer font-bold hover:text-glowskyblue transition-all"
+            class="inline-block z-20 text-lg md:text-2xl cursor-pointer font-bold hover:text-glowskyblue transition-all"
           >
             Contact Me 📪
           </button></a
