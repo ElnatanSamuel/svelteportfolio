@@ -24,7 +24,7 @@
       <a href="https://github.com/ElnatanSamuel/" target="_blank"
         ><GithubSolid size="xl" class="cursor-pointer" /></a
       >
-      <a href="/Elnatan-Samuel2024.pdf" target="_blank">
+      <a href="/Elnatan-Samuel.pdf" target="_blank">
         <FilePdfOutline size="xl" class="cursor-pointer" />
       </a>
     </div>
